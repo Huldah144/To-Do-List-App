@@ -4,6 +4,8 @@ import { useState } from 'react'
 import CustomForm from './Components/CustomForm'
 import TaskList from './Components/TaskList';
 import EditForm from './Components/EditForm';
+import ThemeSwitcher from './Components/ThemeSwitcher'
+
 
 // Customs Hooks ->Local Storage
 import useLocalStorage from './hooks/useLocalStorage';
@@ -75,6 +77,8 @@ function App() {
                 toggleTask={toggleTask} 
                 enterEditMode={enterEditMode}/>
     )}
+
+    <ThemeSwitcher/>
     </div>
   )
 }
